@@ -1,0 +1,132 @@
+html {
+box-sizing: border-box;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+html {
+font-size: 20px;
+}
+
+body {
+margin: 0;
+height: 100vh;
+height: calc(var(--vh,1vh) * 100);
+}
+
+header {
+background-color: grey;
+color: white;
+height: 10%;
+}
+
+section {
+background-color: white;
+color: black;
+height: 82%;
+}
+
+footer {
+background-color: grey;
+color: white;
+height: 8%;
+padding-top: 3px;
+box-shadow: 0 -1px 20px black;
+}
+
+.logo {
+height: 55%;
+text-align: center;
+border-bottom: 2px solid white;
+}
+
+nav {
+flex-direction: row;
+display: flex;
+height: 45%;
+box-shadow: 0 0 50px black;
+}
+
+nav > a {
+flex: 50%;
+text-align: center;
+transition: all 0.7s;
+color: white;
+text-decoration: none;
+}
+
+.simple {
+border-right: 2px solid white;
+background-color: black;
+color: lightblue;
+}
+
+nav > a:active {
+color: lightblue;
+background-color: black;
+}
+
+.color {
+position: absolute;
+top: 40%;
+font-size: 1.3rem;
+background-color: black;
+color: white;
+height: 10%;
+width: auto;
+letter-spacing: 3px;
+font-weight: bold;
+padding: 0px 15px;
+border-radius: 10px;
+}
+
+.colorname {
+color: pink;
+}
+
+button {
+position: absolute;
+top: 55%;
+width: auto;
+height: 10%;
+padding: 15px;
+font-size: 1rem;
+font-weight: bold;
+letter-spacing: 1px;
+border: none;
+outline: none;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 0 3px 3px grey;
+transition: all 0.7s;
+}
+
+button:hover {
+color: white;
+background-color: black;
+}
+
+/* centering text vertically */
+.logo, nav > a, .color {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+
+.color {
+height: auto;
+width: 96%;
+letter-spacing: 0px;
+font-weight: normal;
+padding: 10px 0;
+overflow: hidden;
+}
+
+button {
+top: 50%;
+height: 8%;
+}  }
